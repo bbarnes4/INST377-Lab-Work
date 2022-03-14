@@ -1,58 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Lab 3: Flexbox Demo</title>
+    <meta charset="utf-8">
+    <title>Lab 6 - Handling JSON Responses from REST-ful APIs</title>
+    <!--Q4-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <!--Q5-->
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
-    <div class='name'>
-      Bryan Barnes Lab 3: Flexbox Demo
+  <body class="p-3">
+    <div class="notification is-warning">
+      Bryan Barnes - Lab 6
     </div>
-    <div class='menu-container'>
-      <div class='menu'>
-        <div class='date'>Feburary 13th, 2022</div>
-        <div class='signup'>
-          <a href="data.html">Database Demos</a>
-        </div>
-        <div class='login'>
-          <a href="#">Main Page</a>
+    <div class="columns is-centered is-vcentered">
+        <div class="column is-one-quarter">
+        <form class="box" method="GET" action="https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json" >
+          <div class="field">
+            <label class="label">First Name</label>
+            <div class="control">
+              <input name="first_name" class="input" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Food Preference</label>
+            <div class="control">
+              <input name="food_pref" class="input" type="text">
+            </div>
+          </div>
+          <div class="field">
+            <label class="label">Veggie or Vegan?</label>
+            <div class="control">
+              <label class="radio">
+                <input type="radio" name="veggie">
+                Yes
+              </label>
+              <label class="radio">
+                <input type="radio" name="vegan">
+                No
+              </label>
+            </div>
+          </div>
+          <button class="button is-primary">Submit</button>
+      </form>
+      </div>
+      <div class="column is-one-third">
+        <div class="card">
+          <div class="card-content">
+            <div class="content">
+              This is going to be something in two weeks!
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class='header-container'>
-      <div class='header'>
-        <div class='subscribe'>
-          <a href="#">Group Project Link (none yet)</a>
-        </div>
-        <div class='logo'><img src='images/awesome-logo.svg'/></div>
-        <div class='social'>
-          <a href="https://github.com/bbarnes4/INST377-Lab-Work">My Github</a>
-        </div>
-      </div>
-    </div>
-    <div class='photo-grid-container'>
-      <div class='photo-grid'>
-        <div class='photo-grid-item first-item'>
-          <img src='images/one.svg'/>
-        </div>
-        <div class='photo-grid-item'>
-          <img src='images/two.svg'/>
-        </div>
-        <div class='photo-grid-item'>
-          <img src='images/three.svg'/>
-        </div>
-        <div class='photo-grid-item'>
-          <img src='images/four.svg'/>
-        </div>
-        <div class='photo-grid-item last-item'>
-          <img src='images/five.svg'/>
-        </div>
-      </div>
-    </div>
-    <div class='footer'>
-      <div class='footer-item footer-one'>footer item 1</div>
-      <div class='footer-item footer-two'>footer item 2</div>
-      <div class='footer-item footer-three'>footer item 3</div>
-    </div>
+    <script src ="js/script.js"></script>
   </body>
 </html>
